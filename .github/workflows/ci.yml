@@ -78,3 +78,38 @@ jobs:
 
       - name: Run tests
         run: just test
+
+  test-cross:
+    name: Test (${{ matrix.name }})
+    needs: lint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Linux ARMv7
+            target: armv7-unknown-linux-gnueabihf
+          - name: Linux ppc64le
+            target: powerpc64le-unknown-linux-gnu
+          - name: Linux s390x
+            target: s390x-unknown-linux-gnu
+          - name: Linux RISC-V 64
+            target: riscv64gc-unknown-linux-gnu
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.target }}
+
+      - uses: taiki-e/install-action@cross
+
+      - name: Build
+        run: cross build --target ${{ matrix.target }}
+
+      - name: Run tests
+        run: cross test --target ${{ matrix.target }}
