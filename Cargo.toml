@@ -11,7 +11,7 @@ homepage = "https://network-output.com"
 readme = "README.md"
 keywords = ["cli", "http", "json", "networking", "websocket"]
 categories = ["command-line-utilities", "network-programming"]
-exclude = [".github/", ".claude/", "justfile", "AGENTS.md", "npm/", "homebrew/"]
+exclude = [".github/", ".claude/", "justfile", "AGENTS.md", "npm/", "homebrew/", "scoop/"]
 
 [[bin]]
 name = "no"

@@ -30,6 +30,13 @@ For a permanent install:
 npm install -g @network-output/no
 ```
 
+### Scoop (Windows)
+
+```sh
+scoop bucket add network-output https://github.com/network-output/homebrew-tap
+scoop install no
+```
+
 ### GitHub Releases
 
 Download prebuilt binaries from [GitHub Releases](https://github.com/network-output/no/releases).
