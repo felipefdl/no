@@ -159,12 +159,15 @@ fn tcp_listen_accept() {
   reader.read_line(&mut first_line).unwrap();
 
   let listen_json: serde_json::Value = serde_json::from_str(&first_line).unwrap();
-  let listen_addr = listen_json["data"]["address"].as_str().unwrap();
+  let listen_addr = listen_json["data"]["address"]
+    .as_str()
+    .unwrap()
+    .replace("0.0.0.0", "127.0.0.1");
 
   // Connect a client and send a message using std::net
   {
     use std::io::Write;
-    let mut stream = std::net::TcpStream::connect(listen_addr).unwrap();
+    let mut stream = std::net::TcpStream::connect(&listen_addr).unwrap();
     stream.write_all(b"test message").unwrap();
     stream.shutdown(std::net::Shutdown::Both).unwrap();
     std::thread::sleep(std::time::Duration::from_millis(200));

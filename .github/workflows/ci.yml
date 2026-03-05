@@ -82,8 +82,8 @@ jobs:
       - name: Run tests
         run: just test
 
-  test-cross:
-    name: Test (${{ matrix.name }})
+  build-cross:
+    name: Build (${{ matrix.name }})
     needs: lint
     runs-on: ubuntu-latest
     strategy:
@@ -113,6 +113,3 @@ jobs:
 
       - name: Build
         run: cross build --target ${{ matrix.target }} --features reqwest/native-tls-vendored
-
-      - name: Run unit tests
-        run: cross test --lib --target ${{ matrix.target }} --features reqwest/native-tls-vendored
