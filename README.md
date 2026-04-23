@@ -9,7 +9,7 @@
 
 A fast, structured networking CLI for HTTP, WebSocket, TCP, UDP, MQTT, SSE, DNS, Ping, and WHOIS.
 
-**Docs:** [network-output.github.io/no](https://network-output.github.io/no)
+**Docs:** [felipefdl.github.io/no](https://felipefdl.github.io/no)
 
 ## Installation
 
@@ -19,34 +19,9 @@ A fast, structured networking CLI for HTTP, WebSocket, TCP, UDP, MQTT, SSE, DNS,
 cargo install network-output
 ```
 
-### Homebrew
-
-```sh
-brew install network-output/tap/network-output
-```
-
-### npm
-
-```sh
-npx @network-output/no
-```
-
-For a permanent install:
-
-```sh
-npm install -g @network-output/no
-```
-
-### Scoop (Windows)
-
-```sh
-scoop bucket add network-output https://github.com/network-output/scoop-bucket
-scoop install no
-```
-
 ### GitHub Releases
 
-Download prebuilt binaries from [GitHub Releases](https://github.com/network-output/no/releases).
+Download prebuilt binaries from [GitHub Releases](https://github.com/felipefdl/no/releases).
 
 ### Build from source
 
@@ -204,7 +179,7 @@ JSON output follows a consistent envelope:
 
 ## Documentation
 
-Full documentation is available at [network-output.github.io/no](https://network-output.github.io/no), covering all protocols, output format, global flags, exit codes, environment variables, and URL normalization rules.
+Full documentation is available at [felipefdl.github.io/no](https://felipefdl.github.io/no), covering all protocols, output format, global flags, exit codes, environment variables, and URL normalization rules.
 
 API documentation can be generated with:
 
@@ -237,12 +212,6 @@ AI skills that teach agents how to use `no` for networking tasks. Compatible wit
 | `output-filtering` | jq filtering (`--jq` flag and standalone `no jq`) |
 
 ### Install the plugin
-
-**From GitHub:**
-
-```sh
-claude --plugin network-output/no-skills
-```
 
 **Built into `no`:**
 

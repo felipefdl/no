@@ -1,23 +1,20 @@
-# no (network-output)
+# no
 
 > A fast, structured networking CLI for HTTP, WebSocket, TCP, UDP, MQTT, SSE, DNS, Ping, and WHOIS.
 
 `no` is a Rust-based CLI tool that provides consistent structured JSON output across nine networking protocols. Output is newline-delimited JSON when piped and pretty-printed when interactive. It includes a built-in jq filter, IPv6 support, and automatic URL scheme inference.
 
-- Docs: [network-output.github.io/no](https://network-output.github.io/no)
-- Source: [github.com/network-output/no](https://github.com/network-output/no)
-- Full reference: [llms-full.txt](https://network-output.github.io/no/llms-full.txt)
+- Docs: [felipefdl.github.io/no](https://felipefdl.github.io/no)
+- Source: [github.com/felipefdl/no](https://github.com/felipefdl/no)
+- Full reference: [llms-full.txt](https://felipefdl.github.io/no/llms-full.txt)
 
 ## Installation
 
 ```sh
-cargo install network-output       # Cargo
-brew install network-output/tap/network-output  # Homebrew
-npx @network-output/no             # npm (one-off)
-npm install -g @network-output/no  # npm (global)
+cargo install network-output       # Cargo (crate name)
 ```
 
-Windows (Scoop): `scoop bucket add network-output https://github.com/network-output/scoop-bucket && scoop install no`
+Prebuilt binaries: [GitHub Releases](https://github.com/felipefdl/no/releases)
 
 ## Protocols
 
@@ -192,4 +189,4 @@ AI skills that teach agents how to use `no` for networking tasks. Compatible wit
 | `sse-monitoring` | Server-Sent Events stream monitoring |
 | `output-filtering` | jq filtering (`--jq` flag and standalone `no jq`) |
 
-Install: `claude --plugin network-output/no-skills` or `no skills install`
+Install: `no skills install` (writes the plugin to `~/.claude/plugins/no/`)

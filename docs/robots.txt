@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://network-output.github.io/no/sitemap.xml
-Llms-txt: https://network-output.github.io/no/llms.txt
+Sitemap: https://felipefdl.github.io/no/sitemap.xml
+Llms-txt: https://felipefdl.github.io/no/llms.txt

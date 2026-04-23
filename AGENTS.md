@@ -9,7 +9,7 @@ Project conventions and architecture reference for `no`, the AI-first networking
 `no` is a networking CLI tool written in Rust. It supports multiple protocols (HTTP, WebSocket, TCP, MQTT, SSE, UDP, DNS, Ping, WHOIS) with a consistent structured output format suited for both human-readable display and machine consumption.
 
 - **Binary name:** `no`
-- **Package name:** `network-output`
+- **Crate name (crates.io):** `network-output`
 - **Crate edition:** 2024
 - **Minimum Rust version:** 1.85.0
 
@@ -533,7 +533,7 @@ Exit code 4 on invalid JSON input or invalid jq expression.
 
 ### Website
 
-The documentation site at [network-output.github.io/no](https://network-output.github.io/no) is a single self-contained HTML file at `docs/index.html` with all CSS and JS inlined. It uses a retromodern CRT aesthetic (dark background, phosphor green accents, scanline overlay). GitHub Pages serves the site from the `docs/` directory on the `main` branch.
+The documentation site at [felipefdl.github.io/no](https://felipefdl.github.io/no) is a single self-contained HTML file at `docs/index.html` with all CSS and JS inlined. It uses a retromodern CRT aesthetic (dark background, phosphor green accents, scanline overlay). GitHub Pages serves the site from the `docs/` directory on the `main` branch.
 
 To preview locally:
 

@@ -11,20 +11,20 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="mask-icon" href="favicon.svg" color="#00ff88">
-  <link rel="canonical" href="https://network-output.github.io/no/">
+  <link rel="canonical" href="https://felipefdl.github.io/no/">
   <meta name="theme-color" content="#0a0a0f">
   <meta name="keywords" content="cli, networking, http, websocket, tcp, udp, mqtt, sse, dns, ping, whois, json, terminal, rust, curl alternative, httpie alternative, command line, network tool">
-  <meta name="author" content="network-output">
+  <meta name="author" content="Felipe Lima">
   <meta property="og:type" content="website">
   <meta property="og:title" content="NO - Fast, structured networking from the terminal">
   <meta property="og:description" content="Fast, structured networking from the terminal. HTTP, WebSocket, TCP, UDP, DNS, Ping, WHOIS, MQTT, and SSE with consistent JSON output.">
-  <meta property="og:image" content="https://network-output.github.io/no/og-image.png">
-  <meta property="og:url" content="https://network-output.github.io/no">
-  <meta property="og:site_name" content="network-output">
+  <meta property="og:image" content="https://felipefdl.github.io/no/og-image.png">
+  <meta property="og:url" content="https://felipefdl.github.io/no">
+  <meta property="og:site_name" content="no">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="NO - Fast, structured networking from the terminal">
   <meta name="twitter:description" content="Fast, structured networking from the terminal. HTTP, WebSocket, TCP, UDP, DNS, Ping, WHOIS, MQTT, and SSE with consistent JSON output.">
-  <meta name="twitter:image" content="https://network-output.github.io/no/og-image.png">
+  <meta name="twitter:image" content="https://felipefdl.github.io/no/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -805,8 +805,8 @@
     "alternateName": "network-output",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "macOS, Linux, Windows",
-    "url": "https://network-output.github.io/no",
-    "downloadUrl": "https://github.com/network-output/no/releases",
+    "url": "https://felipefdl.github.io/no",
+    "downloadUrl": "https://github.com/felipefdl/no/releases",
     "softwareVersion": "0.1.2",
     "license": "https://opensource.org/licenses/Apache-2.0",
     "programmingLanguage": "Rust",
@@ -816,10 +816,10 @@
       "price": "0",
       "priceCurrency": "USD"
     },
-    "sourceOrganization": {
-      "@type": "Organization",
-      "name": "network-output",
-      "url": "https://github.com/network-output"
+    "author": {
+      "@type": "Person",
+      "name": "Felipe Lima",
+      "url": "https://github.com/felipefdl"
     }
   }
   </script>
@@ -843,7 +843,7 @@
   <nav class="sidebar" id="sidebar">
     <div class="sidebar-logo">
       <a href="#hero" class="logo-text">no</a>
-      <span class="logo-sub">network-output</span>
+      <span class="logo-sub">felipefdl/no</span>
     </div>
     <div class="sidebar-nav">
       <div class="nav-section">Getting Started</div>
@@ -871,7 +871,7 @@
       <a href="#ai-skills">AI Skills</a>
     </div>
     <div class="sidebar-footer">
-      <a href="https://github.com/network-output/no" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/felipefdl/no" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         GitHub
       </a>
@@ -932,31 +932,16 @@
       <div class="hero-install">
         <div class="hero-install-tabs">
           <button class="hero-install-tab active" onclick="switchInstallTab('cargo', this)">Cargo</button>
-          <button class="hero-install-tab" onclick="switchInstallTab('homebrew', this)">Homebrew</button>
-          <button class="hero-install-tab" onclick="switchInstallTab('npx', this)">npx</button>
-          <button class="hero-install-tab" onclick="switchInstallTab('npm', this)">npm</button>
-          <button class="hero-install-tab" onclick="switchInstallTab('scoop', this)">Scoop</button>
+          <button class="hero-install-tab" onclick="switchInstallTab('releases', this)">Releases</button>
         </div>
         <div class="hero-install-panels">
           <div class="hero-install-panel active" data-tab="cargo">
             <code>$ cargo install network-output</code>
             <button class="copy-btn" onclick="copyText('cargo install network-output', this)" style="opacity: 1;">Copy</button>
           </div>
-          <div class="hero-install-panel" data-tab="homebrew">
-            <code>$ brew install network-output/tap/network-output</code>
-            <button class="copy-btn" onclick="copyText('brew install network-output/tap/network-output', this)" style="opacity: 1;">Copy</button>
-          </div>
-          <div class="hero-install-panel" data-tab="npx">
-            <code>$ npx @network-output/no</code>
-            <button class="copy-btn" onclick="copyText('npx @network-output/no', this)" style="opacity: 1;">Copy</button>
-          </div>
-          <div class="hero-install-panel" data-tab="npm">
-            <code>$ npm install -g @network-output/no</code>
-            <button class="copy-btn" onclick="copyText('npm install -g @network-output/no', this)" style="opacity: 1;">Copy</button>
-          </div>
-          <div class="hero-install-panel" data-tab="scoop">
-            <code>$ scoop bucket add network-output https://github.com/network-output/scoop-bucket && scoop install no</code>
-            <button class="copy-btn" onclick="copyText('scoop bucket add network-output https://github.com/network-output/scoop-bucket && scoop install no', this)" style="opacity: 1;">Copy</button>
+          <div class="hero-install-panel" data-tab="releases">
+            <code>$ # Download prebuilt binaries from GitHub Releases</code>
+            <button class="copy-btn" onclick="window.open('https://github.com/felipefdl/no/releases', '_blank')" style="opacity: 1;">Open</button>
           </div>
         </div>
       </div>
@@ -1577,9 +1562,6 @@ no http GET http://example.com/api     # -> http://example.com/api</code></pre>
       </table>
 
       <h3>Install the Plugin</h3>
-      <p><strong>From GitHub:</strong></p>
-      <pre><code class="lang-sh">claude --plugin network-output/no-skills</code></pre>
-
       <p><strong>Built into <code>no</code>:</strong></p>
       <pre><code class="lang-sh">no skills install</code></pre>
       <p class="muted">This writes the plugin to <code>~/.claude/plugins/no/</code>.</p>
@@ -1587,18 +1569,17 @@ no http GET http://example.com/api     # -> http://example.com/api</code></pre>
       <p><strong>Local (from source):</strong></p>
       <pre><code class="lang-sh">claude --plugin-dir ./claude-plugin</code></pre>
 
-      <p>See the <a href="https://github.com/network-output/no/tree/main/claude-plugin" target="_blank" rel="noopener noreferrer">plugin README</a> for full details.</p>
+      <p>See the <a href="https://github.com/felipefdl/no/tree/main/claude-plugin" target="_blank" rel="noopener noreferrer">plugin README</a> for full details.</p>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
-      <p>network-output -- built with Rust</p>
+      <p>no -- built with Rust</p>
       <div class="footer-links">
-        <a href="https://github.com/network-output/no" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">GitHub</a>
+        <a href="https://github.com/felipefdl/no" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">GitHub</a>
         <a href="https://crates.io/crates/network-output" target="_blank" rel="noopener noreferrer" aria-label="View package on crates.io">crates.io</a>
-        <a href="https://www.npmjs.com/package/@network-output/no" target="_blank" rel="noopener noreferrer" aria-label="View package on npm">npm</a>
-        <a href="https://github.com/network-output/no/releases" target="_blank" rel="noopener noreferrer" aria-label="Download from GitHub Releases">Releases</a>
-        <a href="https://github.com/network-output/no/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" aria-label="View Apache-2.0 license">Apache-2.0</a>
+        <a href="https://github.com/felipefdl/no/releases" target="_blank" rel="noopener noreferrer" aria-label="Download from GitHub Releases">Releases</a>
+        <a href="https://github.com/felipefdl/no/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" aria-label="View Apache-2.0 license">Apache-2.0</a>
       </div>
     </footer>
 

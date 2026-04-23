@@ -1,3 +1,0 @@
-[submodule "claude-plugin"]
-	path = claude-plugin
-	url = git@github.com:network-output/no-skills.git
